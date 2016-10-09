@@ -30,7 +30,7 @@ namespace RegistroUsuarios
                 DB.EjecutarSql(Query);
                 DB.Desconectar();
               
-                MessageBox.Show("guardo");
+                MessageBox.Show("Guardado Querido Usuario");
             ID.Clear();
             Nombre.Clear();
             Clave.Clear();
@@ -44,6 +44,7 @@ namespace RegistroUsuarios
             ID.ReadOnly = false;
             Nombre.ReadOnly = false;
             Clave.ReadOnly = false;
+            Tipo.Enabled = true;
         }
     }
 

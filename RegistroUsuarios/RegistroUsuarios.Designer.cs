@@ -39,6 +39,8 @@
             this.Modificar = new System.Windows.Forms.Button();
             this.Eliminar = new System.Windows.Forms.Button();
             this.ID = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.Tipo = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -96,7 +98,7 @@
             // 
             // Nuevo
             // 
-            this.Nuevo.Location = new System.Drawing.Point(32, 164);
+            this.Nuevo.Location = new System.Drawing.Point(28, 186);
             this.Nuevo.Name = "Nuevo";
             this.Nuevo.Size = new System.Drawing.Size(95, 47);
             this.Nuevo.TabIndex = 9;
@@ -107,7 +109,7 @@
             // 
             // Guardar
             // 
-            this.Guardar.Location = new System.Drawing.Point(133, 164);
+            this.Guardar.Location = new System.Drawing.Point(129, 186);
             this.Guardar.Name = "Guardar";
             this.Guardar.Size = new System.Drawing.Size(95, 47);
             this.Guardar.TabIndex = 0;
@@ -118,7 +120,7 @@
             // 
             // Modificar
             // 
-            this.Modificar.Location = new System.Drawing.Point(234, 164);
+            this.Modificar.Location = new System.Drawing.Point(230, 186);
             this.Modificar.Name = "Modificar";
             this.Modificar.Size = new System.Drawing.Size(95, 47);
             this.Modificar.TabIndex = 10;
@@ -128,7 +130,7 @@
             // 
             // Eliminar
             // 
-            this.Eliminar.Location = new System.Drawing.Point(335, 164);
+            this.Eliminar.Location = new System.Drawing.Point(331, 186);
             this.Eliminar.Name = "Eliminar";
             this.Eliminar.Size = new System.Drawing.Size(95, 47);
             this.Eliminar.TabIndex = 11;
@@ -144,11 +146,38 @@
             this.ID.Size = new System.Drawing.Size(92, 20);
             this.ID.TabIndex = 12;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(94, 148);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(28, 13);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "Tipo";
+            // 
+            // Tipo
+            // 
+            this.Tipo.Enabled = false;
+            this.Tipo.FormattingEnabled = true;
+            this.Tipo.Items.AddRange(new object[] {
+            "Administrador",
+            "Cajero",
+            "Secretarria",
+            "presindente",
+            "vicepresidente",
+            "obrero"});
+            this.Tipo.Location = new System.Drawing.Point(159, 148);
+            this.Tipo.Name = "Tipo";
+            this.Tipo.Size = new System.Drawing.Size(203, 21);
+            this.Tipo.TabIndex = 14;
+            // 
             // RegistroUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(497, 261);
+            this.Controls.Add(this.Tipo);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.ID);
             this.Controls.Add(this.Eliminar);
             this.Controls.Add(this.Modificar);
@@ -179,5 +208,7 @@
         private System.Windows.Forms.Button Modificar;
         private System.Windows.Forms.Button Eliminar;
         private System.Windows.Forms.TextBox ID;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox Tipo;
     }
 }
